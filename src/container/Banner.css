@@ -1,0 +1,57 @@
+.banner {
+  width: 100%;
+  padding: 12px;
+  background-color: #2675de;
+  min-height: 480px;
+}
+
+.content-container {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.tagline {
+  font-weight: 400;
+}
+
+button {
+  color: white;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  background-color: black;
+  border: 2px solid transparent;
+  padding: 17px 48px;
+  border-radius: 500px;
+  text-transform: uppercase;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.cta-container {
+  margin-top: 35px;
+}
+
+.cta-container button:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .cta-container button {
+    width: 100%;
+  }
+
+  .cta-container button:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.disclaimer-text {
+  margin-top: 40px;
+  font-size: 12px;
+  text-decoration: underline;
+}
