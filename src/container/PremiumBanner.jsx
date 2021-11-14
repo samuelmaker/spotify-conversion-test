@@ -1,20 +1,24 @@
 import "./Banner.css";
 import Button from "../components/Button";
+import languages from "../languages";
 
-const PremiumBanner = () => (
+const PremiumBanner = ({lang = 'de'}) => {
+  const selectedLanguage = languages[lang]
+  
+  return (
   <div className="banner">
     <div className="content-container">
-      <h1>Listen without limits</h1>
+      <h1>{selectedLanguage.title}</h1>
       <h2 className="tagline">
-        Ad-free music listening, on-demand, and offline.
+        {selectedLanguage.tagline}
       </h2>
       <div className="cta-container">
-        <Button text="Get Started" />
-        <Button text="View Plans" secondary />
+        <Button text={selectedLanguage.getStartedCTA} />
+        <Button text={selectedLanguage.viewPlansCTA} secondary />
       </div>
-      <p className="disclaimer-text">* Terms and conditions apply</p>
+      <p className="disclaimer-text">{selectedLanguage.termsAndConditions}</p>
     </div>
   </div>
-);
+)}
 
 export default PremiumBanner;
