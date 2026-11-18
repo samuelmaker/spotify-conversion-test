@@ -1,4 +1,4 @@
-export default {
+const languages = {
   en: {
     title: "Listen without limits",
     tagline: "Ad-free music listening, on-demand, and offline.",
@@ -27,3 +27,5 @@ export default {
       "Das Hören auf Ihrem Telefon oder Tablet ist kostenlos, einfach und macht Gaudi.",
   },
 };
+
+export default languages;

@@ -46,7 +46,7 @@ const PremiumBanner = ({ lang = "en" }) => {
             </a>
             <a
               href="https://spotify.link/T1vKH6Kr9ib?label=sp_cid%3Ad05bd268d312dc9c014294034aa2d5c0"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               <img
                 src="https://www-growth.scdn.co/static/badges/google/en.png"
@@ -55,7 +55,7 @@ const PremiumBanner = ({ lang = "en" }) => {
             </a>
             <a
               href="https://www.microsoft.com/store/p/spotify-music/9ncbcszsjrsb?cid=spotifyweb-windows10-store-direct"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               <img
                 src="https://www-growth.scdn.co/static/badges/microsoft-windows/en.png"
